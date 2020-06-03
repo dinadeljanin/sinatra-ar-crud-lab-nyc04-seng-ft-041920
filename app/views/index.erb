@@ -1,0 +1,8 @@
+<%# That view should use ERB to iterate over @articles and render them on the page. %>
+
+<h1>Articles</h1>
+<%@articles.each do |article|%>
+  <a href="/articles/<%=article.id%>">
+    <h2><%= article.title %></h2>
+  </a>
+<%end%>
